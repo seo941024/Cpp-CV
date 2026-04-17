@@ -6,7 +6,7 @@
 #include <fstream>
 using namespace std;
 
-int main()  
+int main()
 {
   // 선언
   int sum = 0;
@@ -14,13 +14,14 @@ int main()
   ifstream infile;
   // 파일 열기
   infile.open("numbers.dat");
-  // While 반복문
-  while(infile >> num)
+  // infile.open()"numbers.dat"
+  //  While 반복문
+  while (infile >> num)
   {
     sum = sum + num;
-  } 
+  }
   // 결과 출력
   cout << "합 = " << sum;
   infile.close();
-  return 0; 
+  return 0;
 }
