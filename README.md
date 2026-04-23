@@ -118,14 +118,5 @@ make
 
 ---
 
-## 👨‍💻 Author
-
-* Developer: Your Name
-* 분야: Computer Vision / Systems Programming
-
----
-
-## 📄 License
-
 MIT License
 
