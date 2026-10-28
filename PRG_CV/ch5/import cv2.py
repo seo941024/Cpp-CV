@@ -25,13 +25,22 @@ contours, _ = cv2.findContours(canny, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
 contour_img = img.copy()
 cv2.drawContours(contour_img, contours, -1, (0, 255, 0), 2)
 
+scale = 0.5
+
+img_show = cv2.resize(img, None, fx=scale, fy=scale)
+gray_show = cv2.resize(gray, None, fx=scale, fy=scale)
+sobelx_show = cv2.resize(sobelx, None, fx=scale, fy=scale)
+sobely_show = cv2.resize(sobely, None, fx=scale, fy=scale)
+canny_show = cv2.resize(canny, None, fx=scale, fy=scale)
+contour_show = cv2.resize(contour_img, None, fx=scale, fy=scale)
+
 # --- 화면 출력 ---
-cv2.imshow('Original', img)
-cv2.imshow('Gray', gray)
-cv2.imshow('Sobel X', sobelx)
-cv2.imshow('Sobel Y', sobely)
-cv2.imshow('Canny', canny)
-cv2.imshow('Contour', contour_img)
+cv2.imshow('Original', img_show)
+cv2.imshow('Gray', gray_show)
+cv2.imshow('Sobel X', sobelx_show)
+cv2.imshow('Sobel Y', sobely_show)
+cv2.imshow('Canny', canny_show)
+cv2.imshow('Contour', contour_show)
 
 # 키 입력 대기 (이거 없으면 창 바로 꺼짐)
 cv2.waitKey(0)

@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="HelloSDK.vcxproj" Id="8d884903-3f10-4306-aebe-8660cc6954ae" />
+</Solution>

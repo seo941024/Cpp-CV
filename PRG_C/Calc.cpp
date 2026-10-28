@@ -44,71 +44,31 @@ int main()
     cout << "네 번째 숫자를 입력하세요: ";
     cin >> d;
 
-    // 중간 계산용 변수
-    long long first = 0;
-    long long second = 0;
-    long long result = 0;
+    // 숫자와 연산자를 배열로 정리
+    long long nums[4] = { a, b, c, d };
+    char ops[3] = { op1, op2, op3 };
+    int n = 4;
 
-    char opA, opB;
-
-    // 곱셈, 나눗셈 먼저 처리
-    // a op1 b
-    if (op1 == '*' || op1 == '/')
+    // 곱셈, 나눗셈 먼저 처리: 계산한 값으로 두 숫자를 합치고 뒤를 한 칸씩 당김
+    for (int i = 0; i < n - 1; )
     {
-        first = calculate(a, b, op1);
-        opA = op2;
-    }
-    else
-    {
-        first = a;
-        opA = op1;
-    }
-
-    // op2 c
-    if (op2 == '*' || op2 == '/')
-    {
-        if (op1 == '*' || op1 == '/')
-            first = calculate(first, c, op2);
+        if (ops[i] == '*' || ops[i] == '/')
+        {
+            nums[i] = calculate(nums[i], nums[i + 1], ops[i]);
+            for (int j = i + 1; j < n - 1; j++)
+                nums[j] = nums[j + 1];
+            for (int j = i; j < n - 2; j++)
+                ops[j] = ops[j + 1];
+            n--;
+        }
         else
-            first = calculate(b, c, op2);
-
-        opB = op3;
-    }
-    else
-    {
-        if (op1 == '+' || op1 == '-')
-            second = b;
-
-        opB = op2;
+            i++;
     }
 
-    // c op3 d
-    if (op3 == '*' || op3 == '/')
-    {
-        second = calculate(c, d, op3);
-    }
-    else
-    {
-        second = c;
-    }
-
-    // 남은 연산자 처리
-
-    if (op1 == '+' || op1 == '-')
-        result = calculate(a, second, op1);
-    else
-        result = first;
-
-    if (op2 == '+' || op2 == '-')
-    {
-        if (op3 == '*' || op3 == '/')
-            result = calculate(result, second, op2);
-        else
-            result = calculate(result, c, op2);
-    }
-
-    if (op3 == '+' || op3 == '-')
-        result = calculate(result, d, op3);
+    // 남은 덧셈, 뺄셈을 왼쪽부터 처리
+    long long result = nums[0];
+    for (int i = 0; i < n - 1; i++)
+        result = calculate(result, nums[i + 1], ops[i]);
 
     // 오버/언더플로우 발생
     if (result > INT_MAX || result < INT_MIN)

@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="HelloMFC.vcxproj" Id="0f164ee8-69e5-4a90-ba59-efa2f36bedcb" />
+</Solution>
