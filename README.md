@@ -1,19 +1,19 @@
 # Cpp-CV
 
-C++ 프로그래밍과 OpenCV 컴퓨터 비전 수업 실습 저장소. 작성자 서지섭.
+C++ 프로그래밍과 OpenCV 컴퓨터 비전 학습 저장소. 작성자 서지섭.
 
 | 폴더 | 내용 | 언어·도구 |
 |---|---|---|
-| `PRG_C/` | 장별 C++ 문법 실습, 과제 | C++, g++ |
-| `PRG_CV/` | 장별 OpenCV·딥러닝 비전 실습, 과제 | Python, OpenCV |
-| `PRG_MFC2/` | Win32 SDK·MFC 윈도우 프로그래밍 실습 | C++, Visual Studio |
+| `PRG_C/` | 장별 C++ 문법 예제 | C++, g++ |
+| `PRG_CV/` | 장별 OpenCV·딥러닝 비전 예제 | Python, OpenCV |
+| `PRG_MFC2/` | Win32 SDK·MFC 윈도우 프로그래밍 | C++, Visual Studio |
 | `docs/images/` | README용 실행 결과 이미지 |
 
 `PRG_C`의 소스는 모두 `.cpp`이며 `iostream`, `cout`, 클래스를 쓰는 C++ 코드.
 
 ---
 
-## PRG_C 장별 실습
+## PRG_C 장별 예제
 
 | 장 | 파일 | 주제 | 핵심 개념 |
 |---|---|---|---|
@@ -43,7 +43,7 @@ C++ 프로그래밍과 OpenCV 컴퓨터 비전 수업 실습 저장소. 작성�
 
 ---
 
-## PRG_CV 실습
+## PRG_CV 예제
 
 ### 2~6장 영상 처리 기초
 
@@ -84,7 +84,7 @@ C++ 프로그래밍과 OpenCV 컴퓨터 비전 수업 실습 저장소. 작성�
 
 ---
 
-## PRG_MFC2 윈도우 프로그래밍 실습
+## PRG_MFC2 윈도우 프로그래밍
 
 Visual Studio `.slnx` 솔루션, 플랫폼 도구 집합 v145. `HelloSDK`를 제외한 프로젝트는 MFC 동적 연결.
 
@@ -102,7 +102,7 @@ Visual Studio `.slnx` 솔루션, 플랫폼 도구 집합 v145. `HelloSDK`를 제
 
 ## 실행 결과
 
-C++ 결과는 MSYS2 g++ 15.2.0으로 다시 컴파일·실행한 출력을 터미널 모양 이미지로 만든 것. 입력값은 노란색 표시. OpenCV 결과는 Python 3.14, OpenCV 4.13.0으로 실습 코드를 실행하고 `imshow` 창 대신 파일로 저장한 것. `CPA_detection.py`는 PyQt5 화면 없이 검출 함수 `detect_signs`만 프레임마다 호출한 결과.
+C++ 결과는 MSYS2 g++ 15.2.0으로 다시 컴파일·실행한 출력을 터미널 모양 이미지로 만든 것. 입력값은 노란색 표시. OpenCV 결과는 Python 3.14, OpenCV 4.13.0으로 코드를 실행하고 `imshow` 창 대신 파일로 저장한 것. `CPA_detection.py`는 PyQt5 화면 없이 검출 함수 `detect_signs`만 프레임마다 호출한 결과.
 
 ### C++
 
