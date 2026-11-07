@@ -2,6 +2,8 @@
 
 C++ 프로그래밍과 OpenCV 컴퓨터 비전 학습 저장소. 작성자 서지섭.
 
+폴더마다 README에 다룬 개념의 뜻, 파일별 내용, 핵심 코드 정리. 아래 표의 장·프로젝트 이름을 누르면 해당 폴더 README로 이동.
+
 ## 학습 범위
 
 | 분야 | 학습 내용 |
@@ -17,9 +19,9 @@ C++ 프로그래밍과 OpenCV 컴퓨터 비전 학습 저장소. 작성자 서�
 
 | 폴더 | 내용 | 언어·도구 |
 |---|---|---|
-| `PRG_C/` | 장별 C++ 문법 예제 | C++, g++ |
-| `PRG_CV/` | 장별 OpenCV·딥러닝 비전 예제 | Python, OpenCV |
-| `PRG_MFC2/` | Win32 SDK·MFC 윈도우 프로그래밍 | C++, Visual Studio |
+| [PRG_C](PRG_C) | 장별 C++ 문법 예제 | C++, g++ |
+| [PRG_CV](PRG_CV) | 장별 OpenCV·딥러닝 비전 예제 | Python, OpenCV |
+| [PRG_MFC2](PRG_MFC2) | Win32 SDK·MFC 윈도우 프로그래밍 | C++, Visual Studio |
 | `docs/images/` | README용 실행 결과 이미지 |
 
 `PRG_C`의 소스는 모두 `.cpp`이며 `iostream`, `cout`, 클래스를 쓰는 C++ 코드.
@@ -33,19 +35,19 @@ C++ 프로그래밍과 OpenCV 컴퓨터 비전 학습 저장소. 작성자 서�
 | 2장 | `hello.cpp`, `Prg2-1~2`, `prg2-3.cpp` | 프로그램 구조 | `main`, `cout`, `cin`, 두 수 합 |
 | 2장 과제 | `Homework.cpp` | 성장 비전 리포트 | `string` 입력, `double` 형 변환으로 달성률 계산, 상태 문자열 분기 |
 | 계산기 | `Calc.cpp` | 숫자 4개·연산자 3개 계산 | 곱셈·나눗셈 우선 처리, `long long` 중간값, `INT_MAX` 범위 검사, `bitset<32>`·`hex` 출력 |
-| 3장 | `Chap03/Prg3-1~31` | 표현식과 자료형 | 리터럴, 연산자 우선순위·결합 방향, 복합 할당, 암묵적·명시적 형 변환, `typeid`, 정수·실수 오버플로우, `boolalpha`·`oct`·`hex`·`setw`·`setprecision` 조정자 |
-| 3장 | `Chap03/clock.cpp` | 초를 일·시·분·초로 변환 | `/`, `%` 연산 연쇄 |
-| 4장 | `Chap04/Prg4-1~17` | 선택문 | `if-else` 중첩, 다중 분기 학점, 논리 연산 윤년 판정, `switch` 낙하 실행, 조건 연산자, 누진 세율 계산, 누적 일수 계산 |
-| 5장 | `Chap05/Prg5-1~22` | 반복문 | 카운터·센티넬·EOF 제어 `while`, `ifstream` 파일 합계, `do-while` 입력 검증, 중첩 반복 달력·곱셈표, 소수 판정, 팩토리얼, 거듭제곱 오버플로우 검사 |
-| 5장 | `Chap05/all.cpp`, `any.cpp`, `homework.cpp` | 전체·존재 조건 판정 | 플래그 초기값 `true`·`false` 차이로 all·any 구현 |
-| 6장 | `Chap06/Prg6-1~27` | 함수 | `<cmath>`·`<cctype>`·`<ctime>` 라이브러리, `rand`·`srand` 추측 게임, 값 전달과 참조 전달, 기본 매개변수, 오버로딩, 셰도잉, 범위 해결 연산자, `static` 지역 변수, 예금 미래 가치 |
-| 6장 | `Chap06/Prg.cpp` | 구구단 가로 출력, `static` 지역 변수 | 중첩 반복, 정적 지역 변수 누적 |
-| 7장 | `Chap07/Prg7-1~15` | 클래스 | 생성자·복사 생성자·소멸자, 접근자·설정자, `static` 객체 수, `assert` 불변 조건, 인터페이스·구현·애플리케이션 파일 분리 |
-| 7장 | `Chap07/circle.h`, `circle.cpp`, `app.cpp`, `makefile` | Circle 분할 컴파일 | 헤더 가드, `makefile` 패턴 규칙 |
-| 7장 | `Chap07/fraction.h`, `fraction.cpp`, `app2.cpp` | Fraction 분할 컴파일 | 최대공약수 약분, 부호 정규화, 기본 인수 |
-| 8장 | `Chap08/Chap08/Prg8-1~15` | 배열 | 배열 역순 출력, 파일 입출력, 객체 배열, 배열 매개변수, 병렬 배열, 2차원 배열, 빈도 배열 히스토그램, 2차원·1차원 선형 변환 |
-| 9장 | `Chap09/Prg9-1~21` | 참조·포인터·동적 메모리 | 참조 변수, 포인터 전달 스왑, 포인터 산술, 2차원 배열 포인터 전달, 힙 배열, 래기드 배열 이항계수, 소멸자에서 힙 해제, Matrix 클래스 덧셈·뺄셈·곱셈 |
-| 과제 6 | `HW6/product.h`, `product.cpp`, `app.cpp` | 제품 등록 수 관리 | `static` 멤버 변수·함수로 전체 개수 관리, 생성자 증가·소멸자 감소, 블록 종료 시 소멸 시점 확인, `assert` 가격 검증 |
+| [3장](PRG_C/Chap03) | `Chap03/Prg3-1~31` | 표현식과 자료형 | 리터럴, 연산자 우선순위·결합 방향, 복합 할당, 암묵적·명시적 형 변환, `typeid`, 정수·실수 오버플로우, `boolalpha`·`oct`·`hex`·`setw`·`setprecision` 조정자 |
+| [3장](PRG_C/Chap03) | `Chap03/clock.cpp` | 초를 일·시·분·초로 변환 | `/`, `%` 연산 연쇄 |
+| [4장](PRG_C/Chap04) | `Chap04/Prg4-1~17` | 선택문 | `if-else` 중첩, 다중 분기 학점, 논리 연산 윤년 판정, `switch` 낙하 실행, 조건 연산자, 누진 세율 계산, 누적 일수 계산 |
+| [5장](PRG_C/Chap05) | `Chap05/Prg5-1~22` | 반복문 | 카운터·센티넬·EOF 제어 `while`, `ifstream` 파일 합계, `do-while` 입력 검증, 중첩 반복 달력·곱셈표, 소수 판정, 팩토리얼, 거듭제곱 오버플로우 검사 |
+| [5장](PRG_C/Chap05) | `Chap05/all.cpp`, `any.cpp`, `homework.cpp` | 전체·존재 조건 판정 | 플래그 초기값 `true`·`false` 차이로 all·any 구현 |
+| [6장](PRG_C/Chap06) | `Chap06/Prg6-1~27` | 함수 | `<cmath>`·`<cctype>`·`<ctime>` 라이브러리, `rand`·`srand` 추측 게임, 값 전달과 참조 전달, 기본 매개변수, 오버로딩, 셰도잉, 범위 해결 연산자, `static` 지역 변수, 예금 미래 가치 |
+| [6장](PRG_C/Chap06) | `Chap06/Prg.cpp` | 구구단 가로 출력, `static` 지역 변수 | 중첩 반복, 정적 지역 변수 누적 |
+| [7장](PRG_C/Chap07) | `Chap07/Prg7-1~15` | 클래스 | 생성자·복사 생성자·소멸자, 접근자·설정자, `static` 객체 수, `assert` 불변 조건, 인터페이스·구현·애플리케이션 파일 분리 |
+| [7장](PRG_C/Chap07) | `Chap07/circle.h`, `circle.cpp`, `app.cpp`, `makefile` | Circle 분할 컴파일 | 헤더 가드, `makefile` 패턴 규칙 |
+| [7장](PRG_C/Chap07) | `Chap07/fraction.h`, `fraction.cpp`, `app2.cpp` | Fraction 분할 컴파일 | 최대공약수 약분, 부호 정규화, 기본 인수 |
+| [8장](PRG_C/Chap08) | `Chap08/Chap08/Prg8-1~15` | 배열 | 배열 역순 출력, 파일 입출력, 객체 배열, 배열 매개변수, 병렬 배열, 2차원 배열, 빈도 배열 히스토그램, 2차원·1차원 선형 변환 |
+| [9장](PRG_C/Chap09) | `Chap09/Prg9-1~21` | 참조·포인터·동적 메모리 | 참조 변수, 포인터 전달 스왑, 포인터 산술, 2차원 배열 포인터 전달, 힙 배열, 래기드 배열 이항계수, 소멸자에서 힙 해제, Matrix 클래스 덧셈·뺄셈·곱셈 |
+| [과제 6](PRG_C/HW6) | `HW6/product.h`, `product.cpp`, `app.cpp` | 제품 등록 수 관리 | `static` 멤버 변수·함수로 전체 개수 관리, 생성자 증가·소멸자 감소, 블록 종료 시 소멸 시점 확인, `assert` 가격 검증 |
 
 ### PRG_C 구현 방식
 
@@ -58,31 +60,31 @@ C++ 프로그래밍과 OpenCV 컴퓨터 비전 학습 저장소. 작성자 서�
 
 ## PRG_CV 예제
 
-### 2~6장 영상 처리 기초
+### 2~6장 영상 처리
 
 | 장 | 파일 | 주제 | 핵심 개념 |
 |---|---|---|---|
-| 기초 | `hello.py`, `CV.py`, `img2.py`, `cam.py` | NumPy 배열, 영상 표시, 축소·명암 변환, 웹캠 | `np.array.sort`, `cv.imread`, `cv.resize`, `cv.VideoCapture` |
+| 시작 예제 | `hello.py`, `CV.py`, `img2.py`, `cam.py` | NumPy 배열, 영상 표시, 축소·명암 변환, 웹캠 | `np.array.sort`, `cv.imread`, `cv.resize`, `cv.VideoCapture` |
 | 과제 2 | `Homework2.py`, `Homework2_2.py` | 산토리니 사진 축소·명암·날짜 표기 | `cv.cvtColor`, 0.5배 축소, `cv.rectangle`, `cv.putText` |
 | 2장 | `ch2/2-1~9` | OpenCV 입출력과 마우스 | 영상 저장, 프레임 수집 후 `np.hstack` 연결, 도형·글씨 그리기, 마우스 콜백 사각형·붓 칠 |
-| 3장 | `ch3/3-1~9`, `3-8-1` | 화소 처리 | 채널 분리, 히스토그램, 오츄 이진화, 팽창·침식·닫기, 감마 보정, 히스토그램 평활화, 가우시안 스무딩, 엠보싱, 보간법 비교, 회전 변환, 반복문과 벡터 연산 속도 비교 |
-| 4장 | `ch4/4-1~3` | 에지와 윤곽선 | 소벨 에지 강도, 캐니 임곗값 비교, `findContours` 길이 필터 |
-| 4장 | `ch4/4-4.py` | 사과 검출·개수 세기 | HSV 빨강 두 구간 마스크, 모폴로지 열기·닫기, 면적·원형도 필터, `minEnclosingCircle` |
-| 4장 | `ch4/4-5~8`, `4-6.py` | 영역 분할과 형상 | SLIC 슈퍼픽셀, 정규화 절단, GrabCut, 모멘트·면적·둘레·둥근 정도, 직선 근사, 볼록 헐 |
-| 5장 | `ch5/5-1~4` | 지역 특징 | 해리스 특징 가능성 맵과 비최대 억제, SIFT 키포인트, FLANN 최근접 2개 비율 검사, RANSAC 호모그래피 |
-| 5장 | `ch5/import cv2.py` | 사과 사진 에지·윤곽선 저장 | 소벨 X·Y, 캐니, 외곽 윤곽선, 결과 파일 저장 |
-| 6장 | `ch6/ch6/6-1~7` | PyQt5 비전 응용 | 버튼 콜백, 프레임 수집·저장, GrabCut 오림, SIFT 교통약자 표지판 인식, 파노라마 봉합, 엠보싱·카툰·연필 스케치·유화 효과 |
+| [3장](PRG_C/Chap03) | `ch3/3-1~9`, `3-8-1` | 화소 처리 | 채널 분리, 히스토그램, 오츄 이진화, 팽창·침식·닫기, 감마 보정, 히스토그램 평활화, 가우시안 스무딩, 엠보싱, 보간법 비교, 회전 변환, 반복문과 벡터 연산 속도 비교 |
+| [4장](PRG_C/Chap04) | `ch4/4-1~3` | 에지와 윤곽선 | 소벨 에지 강도, 캐니 임곗값 비교, `findContours` 길이 필터 |
+| [4장](PRG_C/Chap04) | `ch4/4-4.py` | 사과 검출·개수 세기 | HSV 빨강 두 구간 마스크, 모폴로지 열기·닫기, 면적·원형도 필터, `minEnclosingCircle` |
+| [4장](PRG_C/Chap04) | `ch4/4-5~8`, `4-6.py` | 영역 분할과 형상 | SLIC 슈퍼픽셀, 정규화 절단, GrabCut, 모멘트·면적·둘레·둥근 정도, 직선 근사, 볼록 헐 |
+| [5장](PRG_C/Chap05) | `ch5/5-1~4` | 지역 특징 | 해리스 특징 가능성 맵과 비최대 억제, SIFT 키포인트, FLANN 최근접 2개 비율 검사, RANSAC 호모그래피 |
+| [5장](PRG_C/Chap05) | `ch5/import cv2.py` | 사과 사진 에지·윤곽선 저장 | 소벨 X·Y, 캐니, 외곽 윤곽선, 결과 파일 저장 |
+| [6장](PRG_C/Chap06) | `ch6/ch6/6-1~7` | PyQt5 비전 응용 | 버튼 콜백, 프레임 수집·저장, GrabCut 오림, SIFT 교통약자 표지판 인식, 파노라마 봉합, 엠보싱·카툰·연필 스케치·유화 효과 |
 | 6장 과제 | `ch6/ch6/CPA_detection.py` | 도로 영상 어린이보호구역 속도 30 표지판 검출 | SIFT, BFMatcher 비율 검사, RANSAC 인라이어 비율, 검출 사각형 유효성 검사, `QTimer` 프레임 재생 |
-| 6장 | `ch6/ch6/123123123.py`, `test.py` | 표지판 검출 시험본 | `test.py`는 `CPA_detection.py`와 같은 내용 |
-| 6장 | `ch6/ch6/tetris in py.py` | PyQt5 테트리스 | `QPainter` 블록 그리기, `QTimer` 낙하, 행렬 회전 |
+| [6장](PRG_C/Chap06) | `ch6/ch6/123123123.py`, `test.py` | 표지판 검출 시험본 | `test.py`는 `CPA_detection.py`와 같은 내용 |
+| [6장](PRG_C/Chap06) | `ch6/ch6/tetris in py.py` | PyQt5 테트리스 | `QPainter` 블록 그리기, `QTimer` 낙하, 행렬 회전 |
 
 ### 7~13장 딥러닝 비전
 
 | 장 | 파일 | 주제 | 핵심 개념 |
 |---|---|---|---|
-| 7장 | `ch7/7-1~7` | 다층 퍼셉트론 | MNIST·CIFAR-10 확인, SGD·Adam 비교, 깊은 MLP, 배치 정규화·드롭아웃, 학습 모델 저장 후 필기 숫자 인식 |
-| 8장 | `ch8/8-1~8` | 컨볼루션 신경망 | LeNet-5, CIFAR-10 CNN, 데이터 증대, ResNet50 사전 학습 분류, DenseNet121 전이 학습 견종 분류, PyQt5 견종 인식 앱 |
-| 9장 | `ch9/ch9/9-1~9` | 검출과 분할 | YOLO v3 정지 영상·비디오 검출과 FPS 측정, U-net Oxford Pets 분할, DeepLabv3·Mask R-CNN 분할, 배경 흐림·색 변경 |
+| [7장](PRG_C/Chap07) | `ch7/7-1~7` | 다층 퍼셉트론 | MNIST·CIFAR-10 확인, SGD·Adam 비교, 깊은 MLP, 배치 정규화·드롭아웃, 학습 모델 저장 후 필기 숫자 인식 |
+| [8장](PRG_C/Chap08) | `ch8/8-1~8` | 컨볼루션 신경망 | LeNet-5, CIFAR-10 CNN, 데이터 증대, ResNet50 사전 학습 분류, DenseNet121 전이 학습 견종 분류, PyQt5 견종 인식 앱 |
+| [9장](PRG_C/Chap09) | `ch9/ch9/9-1~9` | 검출과 분할 | YOLO v3 정지 영상·비디오 검출과 FPS 측정, U-net Oxford Pets 분할, DeepLabv3·Mask R-CNN 분할, 배경 흐림·색 변경 |
 | 10장 | `ch10/10-1~9` | 추적과 사람 인식 | Farneback·Lucas-Kanade 광류, YOLO v3와 SORT 사람 추적, MediaPipe 얼굴 검출·증강 현실·얼굴 그물망·손·자세 |
 | 10장 | `ch10/test.py` | 손가락 그림판 | MediaPipe 손 랜드마크, 검지만 펴면 그리기, 검지·중지를 펴면 색 선택·지우기, 캔버스 마스크 합성 |
 | 11장 | `ch11/11-1~5` | 트랜스포머 | CIFAR-10 ViT 구현, Hugging Face ViT 분류, DETR 검출, CLIP 영상-문장 유사도 |
@@ -103,13 +105,14 @@ Visual Studio `.slnx` 솔루션, 플랫폼 도구 집합 v145. `HelloSDK`를 제
 
 | 프로젝트 | 주제 | 핵심 개념 |
 |---|---|---|
-| `HelloSDK` | Win32 API 창 | `WNDCLASS` 등록, `CreateWindow`, 메시지 루프, `WndProc`의 `WM_PAINT`·`WM_LBUTTONDOWN` |
-| `HelloMFC` | 최소 MFC 창 | `CWinApp`·`CFrameWnd` 상속, 메시지 맵 |
-| `Console` | MFC 콘솔 | `AfxWinInit`, 문자열 리소스 `LoadString` |
-| `App` | MDI 마법사 프로젝트 | 문서·뷰 구조, 도킹 창 |
-| `Button`, `Button1` | 버튼 컨트롤 | `CButton::Create`로 푸시·체크·3상태·라디오·그룹 박스 생성, `GetCheck` 상태를 메시지 상자로 출력 |
-| `Diaglosbase` | 대화 상자 | `CColorDialog`로 고른 색의 RGB·HEX 값 출력 |
-| `WebCamViewer` | MFC 웹캠 뷰어와 YOLO 검출 | `SetTimer` 33ms 프레임 갱신, Picture Control에 DIB 출력, 별도 스레드에서 `readNetFromONNX`·`NMSBoxes` 추론, 화면 FPS 표시 |
+| [HelloSDK](PRG_MFC2/HelloSDK) | Win32 API 창 | `WNDCLASS` 등록, `CreateWindow`, 메시지 루프, `WndProc`의 `WM_PAINT`·`WM_LBUTTONDOWN` |
+| [HelloMFC](PRG_MFC2/HelloMFC) | 최소 MFC 창 | `CWinApp`·`CFrameWnd` 상속, 메시지 맵 |
+| [Console](PRG_MFC2/Console) | MFC 콘솔 | `AfxWinInit`, 문자열 리소스 `LoadString` |
+| [App](PRG_MFC2/App) | MDI 마법사 프로젝트 | 문서·뷰 구조, 도킹 창 |
+| [Button](PRG_MFC2/Button) | 폼 뷰 버튼 컨트롤 | `CFormView`, 리소스 편집기로 체크 박스·라디오 버튼·그룹 상자 배치 |
+| [Button1](PRG_MFC2/Button1) | 코드로 만든 버튼 컨트롤 | `CButton::Create`로 푸시·체크·3상태·라디오·그룹 박스 생성, `GetCheck` 상태를 메시지 상자로 출력 |
+| [Diaglosbase](PRG_MFC2/Diaglosbase) | 대화 상자 | `CColorDialog`로 고른 색의 RGB·HEX 값 출력 |
+| [WebCamViewer](PRG_MFC2/WebCamViewer) | MFC 웹캠 뷰어와 YOLO 검출 | `SetTimer` 33ms 프레임 갱신, Picture Control에 DIB 출력, 별도 스레드에서 `readNetFromONNX`·`NMSBoxes` 추론, 화면 FPS 표시 |
 
 ---
 
@@ -212,7 +215,7 @@ python 4-4.py
 ```
 
 - 영상 파일을 상대 경로로 읽으므로 스크립트가 있는 폴더에서 실행.
-- `ch3/3-9.py`는 폴더에 없는 `girl_laughing.png`를 읽으므로 그대로는 실행 불가.
+- `ch3/3-9.py`는 폴더에 없는 `girl_laughing.png`를 읽으므로 그대로는 실행되지 않음.
 - `6-6`, `6-7`의 유화 효과 `cv.xphoto`는 `opencv-contrib-python` 필요.
 - 학습된 모델 `.h5`·`.weights`·`.pb`·`.onnx`, 데이터셋, 도로 영상 `.mp4`는 용량 문제로 저장소에서 제외. 실행 시 별도 준비 필요
 - 7장 이후는 TensorFlow, MediaPipe, PixelLib, Transformers, PyTorch, trimesh, filterpy, keras_cv, scikit-learn 사용. 9·10장은 `yolov3.weights`, `yolov3.cfg`, 9장 분할 예제는 `.h5`, `.pb` 모델 파일 필요.
