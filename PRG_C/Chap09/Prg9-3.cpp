@@ -3,6 +3,8 @@
  * 둘 중에 큰 값을 찾는 프로그램                              *
  **************************************************************/
 #include "fraction.h"
+#include <iostream>
+using namespace std;
 
 Fraction& larger(Fraction&, Fraction&);  // 프로토타입
 

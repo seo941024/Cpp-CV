@@ -64,6 +64,24 @@
 
 ## 실행 결과
 
+MSYS2 g++ 15.2.0으로 컴파일해 실행한 화면. 노란색 줄은 키보드 입력값.
+
+| 리터럴·괄호·부호·곱셈·나눗셈 `Prg3-1`~`Prg3-4` | 덧셈·뺄셈·할당·복합 할당 `Prg3-5`~`Prg3-7` |
+|---|---|
+| ![리터럴과 산술 연산](../../docs/images/c_ch03_literal_arith.png) | ![할당 연산](../../docs/images/c_ch03_assign.png) |
+
+| 암묵적·명시적 형 변환 `Prg3-8`~`Prg3-11`. g++의 `typeid` 이름 `i`는 `int`, `l`은 `long`, `d`는 `double` | 우선순위와 결합 방향 `Prg3-12`~`Prg3-17` |
+|---|---|
+| ![형 변환](../../docs/images/c_ch03_conversion.png) | ![우선순위](../../docs/images/c_ch03_precedence.png) |
+
+| 오버플로우·언더플로우 `Prg3-18`~`Prg3-20` | 출력 조정자 `Prg3-21`~`Prg3-24` |
+|---|---|
+| ![오버플로우](../../docs/images/c_ch03_overflow.png) | ![출력 조정자](../../docs/images/c_ch03_manipulator.png) |
+
+| 조정자 입력과 값 분리 `Prg3-25`~`Prg3-29`. `true`, `100`·`17`·`1F`, `12`·`34`·`56`, `3.14159`, `2026` 입력 | 초 단위 변환 `Prg3-30`, 평균과 차이 `Prg3-31`. `7385`, `7`·`15`·`26` 입력 |
+|---|---|
+| ![조정자 입력](../../docs/images/c_ch03_input.png) | ![시간 변환과 평균](../../docs/images/c_ch03_time_avg.png) |
+
 `clock.cpp`에 `100000`을 입력한 결과.
 
 ![clock 실행 결과](../../docs/images/c_ch03_clock.png)

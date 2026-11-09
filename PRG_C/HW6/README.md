@@ -38,3 +38,7 @@ g++ app.cpp product.cpp -o app.exe
 ```
 
 ![HW6 실행 결과](../../docs/images/c_hw6_product.png)
+
+구현 파일과 애플리케이션 파일을 각각 목적 파일로 컴파일한 뒤 링크해 실행한 결과.
+
+![HW6 목적 파일 분할 컴파일](../../docs/images/c_hw6_split_build.png)

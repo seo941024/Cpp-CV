@@ -78,7 +78,7 @@ int main()
   cout << "최종 점수  ";
   for(int j = 0; j < colSize; j++)
   {
-      cout << fixed << setprecision(2) << stdAver[j] << "   ";
+      cout << fixed << setprecision(2) << tstAver[j] << "   ";
   }
   cout << endl;
   return 0;

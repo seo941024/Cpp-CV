@@ -29,3 +29,33 @@
 | [7-7.py](7-7.py) | 마우스로 다섯 칸에 숫자를 쓰고 `r` 키로 저장 모델의 인식 결과 표시, `e` 키 지우기, `s` 키로 잘라 낸 숫자 보기 | `load_model`, `cv.setMouseCallback`, `model.predict` |
 
 `7-7.py`는 `7-5.py`가 저장한 `dmlp_trained.h5`를 불러 사용.
+
+## 실행 결과
+
+Python 3.11, TensorFlow 2.21 CPU로 실행한 결과. 학습 로그는 터미널 출력의 연속된 끝부분, 그래프와 영상 목록은 `plt.show` 시점의 figure를 그대로 저장한 사진. MNIST·CIFAR-10은 Keras 데이터셋 캐시 사용.
+
+| MNIST·CIFAR-10 배열 크기 `7-1.py` | 첫 10장과 정답 `7-1.py`. 위 MNIST, 아래 CIFAR-10 |
+|---|---|
+| ![데이터셋 배열 크기](../../docs/images/cv_ch07_shapes.png) | ![첫 10장](../../docs/images/cv_ch07_samples.png) |
+
+| 배치 정규화·드롭아웃 깊은 MLP `7-2.py`. 30 에포크, 최종 검증 정확률 98.55 | ReLU·Adam MLP `7-3.py`. 30 에포크, 정확률 98.21 |
+|---|---|
+| ![배치 정규화와 드롭아웃](../../docs/images/cv_ch07_bn_dropout.png) | ![ReLU와 Adam](../../docs/images/cv_ch07_mlp_adam.png) |
+
+| SGD·Adam 정확도 곡선 `7-4.py`. 50 에포크 뒤 SGD 89.77, Adam 98.18 | 깊은 MLP `7-5.py`. 50 에포크, 정확률 98.36 |
+|---|---|
+| ![SGD와 Adam 비교](../../docs/images/cv_ch07_sgd_adam.png) | ![깊은 MLP](../../docs/images/cv_ch07_dmlp.png) |
+
+`7-5.py` 정확도·손실 그래프.
+
+![깊은 MLP 그래프](../../docs/images/cv_ch07_dmlp_graph.png)
+
+필기 숫자 인식 `7-7.py`. `7-5.py`가 저장한 `dmlp_trained.h5` 사용. 마우스 콜백에 끌기 이벤트를 넣어 칸마다 2·0·1·7·4를 쓴 화면, `s` 키로 잘라 낸 28×28 숫자, `r` 키 뒤 인식 결과 2·0·1·7·4 순서.
+
+![필기 숫자 인식](../../docs/images/cv_ch07_writing.png)
+
+깊은 MLP를 CIFAR-10에 적용한 `7-6.py`. 50 에포크 뒤 정확률 54.65로 MNIST보다 크게 낮은 결과.
+
+| `7-6.py` 마지막 에포크와 정확률 | `7-6.py` 정확도·손실 그래프 |
+|---|---|
+| ![CIFAR-10 깊은 MLP 로그](../../docs/images/cv_ch07_dmlp_cifar.png) | ![CIFAR-10 깊은 MLP 그래프](../../docs/images/cv_ch07_dmlp_cifar_graph.png) |

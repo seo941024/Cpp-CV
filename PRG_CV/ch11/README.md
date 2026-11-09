@@ -26,3 +26,19 @@
 | [11-5.py](11-5.py) | `openai/clip-vit-base-patch32`로 사진 한 장과 문장 네 개의 일치 확률 출력 | `CLIPProcessor`, `CLIPModel`, `logits_per_image` |
 
 `BSDS_242078.jpg`, `BSDS_361010.jpg`, `BSDS_376001.jpg`: 분류·검출·유사도 계산 입력 사진.
+
+## 실행 결과
+
+Python 3.11, transformers 5.22, PyTorch 2.11 CPU로 실행한 결과. 사전 학습 모델은 Hugging Face 공식 저장소에서 내려받아 사용. matplotlib 사진은 `plt.show` 시점의 figure, DETR 창은 `PrintWindow`로 찍은 사진.
+
+| 사전 학습 ViT 분류 `11-3.py` 입력 사진 세 장 | `11-3.py` 사진별 1순위 부류와 확률. umbrella 98.76, croquet ball 3.89, hay 18.54 |
+|---|---|
+| ![ViT 입력 사진](../../docs/images/cv_ch11_vit.jpg) | ![ViT 분류 결과](../../docs/images/cv_ch11_vit_log.png) |
+
+| DETR 검출 `11-4.py`. `BSDS_361010.jpg`의 사람과 말 박스, 부류·확률 표시 | CLIP 입력 사진 `11-5.py` |
+|---|---|
+| ![DETR 검출](../../docs/images/cv_ch11_detr.png) | ![CLIP 입력 사진](../../docs/images/cv_ch11_clip.png) |
+
+`11-5.py` 문장 네 개의 일치 확률. `Croquet playing on horses` 51.59로 가장 높음.
+
+![CLIP 문장 일치 확률](../../docs/images/cv_ch11_clip_log.png)

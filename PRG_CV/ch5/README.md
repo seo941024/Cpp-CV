@@ -28,6 +28,20 @@
 
 ## 실행 결과
 
+Python 3.11, OpenCV 4.13.0으로 실행한 화면. OpenCV 창은 Win32 `PrintWindow`로 창 그대로 찍은 사진.
+
+| 해리스 `5-1.py` 출력 끝부분. 특징 가능성 맵 `C`와 특징점을 9로 표시한 배열 | `5-1.py`가 띄운 확대 영상 창 |
+|---|---|
+| ![해리스 특징 배열](../../docs/images/cv_ch05_harris_values.png) | ![해리스 확대 영상](../../docs/images/cv_ch05_harris_window.png) |
+
+| SIFT 특징점 `5-2.py`. 원 크기는 스케일, 선은 방향 | FLANN 매칭과 비율 검사 `5-3.py` |
+|---|---|
+| ![SIFT 특징점](../../docs/images/cv_ch05_sift.jpg) | ![FLANN 매칭](../../docs/images/cv_ch05_flann.jpg) |
+
+| `5-3.py`가 출력한 두 영상 특징점 개수와 매칭 시간 | `import cv2.py` 표시 창. 원본, 명암, 소벨 X·Y, 캐니, 윤곽선 |
+|---|---|
+| ![매칭 시간](../../docs/images/cv_ch05_flann_log.png) | ![사과 에지 창](../../docs/images/cv_ch05_apple_windows.jpg) |
+
 SIFT 매칭과 호모그래피 `5-4.py`. 왼쪽 위가 모델로 쓴 버스 영역, 초록 사각형이 장면에서 찾은 위치.
 
 ![호모그래피](../../docs/images/cv_ch05_homography.jpg)

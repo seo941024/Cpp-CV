@@ -29,3 +29,19 @@ NumPy 배열, 영상 파일과 웹캠 프레임 입출력, 도형·글씨 그리
 | [2-9.py](2-9.py) | 마우스 붓 칠 그림판. 왼쪽 버튼은 파란색, 오른쪽 버튼은 빨간색, 버튼을 누른 채 끌면 연속 칠 | `cv.circle`, `EVENT_MOUSEMOVE`, `EVENT_FLAG_LBUTTON` |
 
 `soccer.jpg`, `girl_laughing.jpg`: 예제 입력 사진.
+
+## 실행 결과
+
+Python 3.11, OpenCV 4.13.0으로 실행한 화면. OpenCV 창은 Win32 `PrintWindow`로 창 그대로 찍은 사진. 마우스 예제는 등록된 콜백 함수에 클릭·끌기 이벤트를 차례로 넣어 실행한 결과.
+
+| NumPy 배열 생성과 정렬 `2-1.py` | 사진 표시 `2-2.py` |
+|---|---|
+| ![NumPy 배열](../../docs/images/cv_ch02_numpy.png) | ![사진 표시](../../docs/images/cv_ch02_display.jpg) |
+
+| 명암 변환과 절반 축소 `2-3.py`. 왼쪽부터 컬러·명암·축소 창 | 빨간 사각형과 파란 `laugh` 글씨 `2-6.py` |
+|---|---|
+| ![명암 변환과 축소](../../docs/images/cv_ch02_gray_small.jpg) | ![도형과 글씨](../../docs/images/cv_ch02_draw.jpg) |
+
+마우스 콜백 `2-7.py`, `2-8.py`, `2-9.py`. 위 왼쪽은 왼쪽 클릭 두 번과 오른쪽 클릭 한 번, 위 오른쪽은 누른 점과 뗀 점으로 그린 사각형 두 개, 아래는 왼쪽·오른쪽 버튼 끌기 붓 칠.
+
+![마우스 콜백](../../docs/images/cv_ch02_mouse.jpg)

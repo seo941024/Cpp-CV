@@ -26,7 +26,7 @@ int main()
   int scores[4] = {82, 73, 91, 72};
   char grades[4];
   // 함수 호출
-  findGrades(scores, grades, 5);
+  findGrades(scores, grades, 4);
   // 배열 3개의 값 출력
   for(int i = 0; i < 4; i++)
   {

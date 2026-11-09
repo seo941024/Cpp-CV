@@ -13,6 +13,7 @@ cv.rectangle(small, (50, 50), (200, 200), (0, 255, 0), 2)
 
 cv.imshow('Color image',img)
 cv.imshow('Gray image',gray)
+cv.imshow('Small image',small)
 
 cv.waitKey()
 cv.destroyAllWindows()

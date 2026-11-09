@@ -27,7 +27,7 @@ ch6과 ch9는 소스가 하위 폴더 `ch6/ch6/`, `ch9/ch9/`에 위치.
 |---|---|---|
 | [hello.py](hello.py) | 정수·실수·문자열 NumPy 배열을 만들어 정렬, `ch2/2-1.py`와 같은 예제를 `from numpy import *`로 작성 | `array`, `shape`, `sort` |
 | [CV.py](CV.py) | 사진을 읽어 창에 표시. `soccer.jpg`를 읽은 뒤 `girl_laughing.jpg`로 다시 읽어 두 번째 사진 표시 | `cv.imread`, `cv.imshow` |
-| [img2.py](img2.py) | 원본과 명암 영상 표시, 0.5배 축소 영상에 초록 사각형 그리기 | `cv.resize`, `cv.cvtColor`, `cv.rectangle` |
+| [img2.py](img2.py) | 원본과 명암 영상, 초록 사각형을 그린 0.5배 축소 영상 표시 | `cv.resize`, `cv.cvtColor`, `cv.rectangle` |
 | [cam.py](cam.py) | 웹캠 프레임을 계속 표시하고 `q` 키로 종료, `ch2/2-4.py`와 같은 흐름 | `cv.VideoCapture`, `cap.read` |
 | [Homework2.py](Homework2.py) | 과제 2. 산토리니 사진의 자료형·크기 출력, 컬러·명암 영상을 0.5배 축소하고 날짜 상자와 `2026.03.20` 글씨 표시 | `cv.cvtColor`, `cv.resize`, `cv.rectangle`, `cv.putText` |
 | [Homework2_2.py](Homework2_2.py) | 과제 2 변형. 원본 컬러 영상과 날짜를 넣은 0.5배 축소 명암 영상 표시 | `cv.resize`, `cv.putText` |
@@ -40,6 +40,26 @@ ch6과 ch9는 소스가 하위 폴더 `ch6/ch6/`, `ch9/ch9/`에 위치.
 | 컬러 축소 | 명암 축소 |
 |---|---|
 | ![컬러](santorini_small_text.jpg) | ![명암](santorini_small_gray_text.jpg) |
+
+## 실행 결과
+
+Python 3.11, OpenCV 4.13.0으로 실행한 화면. OpenCV 창은 Win32 `PrintWindow`로 창 그대로 찍은 사진.
+
+| `hello.py` NumPy 배열 정렬 | `CV.py`. 두 번째로 읽은 `girl_laughing.jpg` 표시 |
+|---|---|
+| ![hello 출력](../docs/images/cv_root_hello.png) | ![CV.py 사진 표시](../docs/images/cv_root_cv_display.jpg) |
+
+| `img2.py` 원본, 명암, 초록 사각형을 그린 0.5배 축소 창 | `Homework2.py` 자료형과 크기 출력 |
+|---|---|
+| ![img2 원본·명암·축소](../docs/images/cv_root_img2.jpg) | ![과제 2 출력](../docs/images/cv_root_homework2_log.png) |
+
+| `Homework2.py` 0.5배 축소 컬러·명암 창과 날짜 표기 | `Homework2_2.py` 원본 컬러 창과 날짜를 넣은 축소 명암 창 |
+|---|---|
+| ![과제 2 창](../docs/images/cv_root_homework2.jpg) | ![과제 2 변형 창](../docs/images/cv_root_homework2_2.jpg) |
+
+`4-6.py` 정규화 절단 분할. scikit-image가 있는 Python 3.14에서 실행.
+
+![정규화 절단](../docs/images/cv_root_ncut.jpg)
 
 ## 실행 방법
 

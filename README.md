@@ -170,6 +170,17 @@ SIFT 매칭과 호모그래피 `ch5/5-4.py`.
 - `ch4/4-4.py`: 사진 속 사과 10개 이상 중 3개만 검출. 조건별 탈락 원인은 미확인.
 - `CPA_detection.py`: 정답 표시 데이터가 없어 검출 정확도는 미측정. 확인한 프레임에서는 속도 30 표지판에 사각형 표시.
 - `Chap09/Prg9-15.cpp`: 행마다 `new int[i]`로 할당하고 `pascal[i][i]`까지 기록해 범위를 1칸 넘던 문제를 `new int[i + 1]`로 수정
+- `Chap08/Chap08/Prg8-9.cpp`: 원소 4개 배열에 크기 5를 넘겨 범위 밖 점수로 학점 표를 읽다가 비정상 종료하던 문제를 `findGrades(scores, grades, 4)`로 수정
+- `Chap08/Chap08/Prg8-13.cpp`: `최종 점수` 줄에 시험 평균 대신 학생 평균 `stdAver`를 출력하던 문제를 `tstAver`로 수정
+- `Chap09/Prg9-17.cpp`: 표준 편차를 `sqrt(합) / 학생 수`로 계산해 4.51로 나오던 문제를 `sqrt(합 / 학생 수)`로 수정, 14.25 확인
+- `Chap09/Prg9-3.cpp`: `cout`을 쓰면서 `<iostream>` 포함과 `using namespace std`가 없어 `Chap07/fraction.h`로 빌드되지 않던 문제 수정
+- `Chap06/Prg6-7.cpp`: 5~15 범위만 받는 추측 게임이 `1~15` 범위로 안내하던 문구를 `5~15`로 수정
+- `inFile.dat`, `numFile.dat`, `scores.dat`: 파일 맨 앞 UTF-8 BOM 때문에 첫 정수부터 읽기에 실패해 `Prg8-2` 빈 출력, `Prg8-5` 0개, `Prg9-18` 비정상 종료가 나던 문제를 BOM 제거로 수정
+- `PRG_CV/img2.py`: 초록 사각형을 그린 0.5배 축소 영상을 창에 띄우지 않던 문제를 `cv.imshow('Small image',small)` 추가로 수정
+- `ch8/8-5.py`: NumPy 2에서 1원소 배열 `int()` 변환 오류와 Keras 3에서 없어진 `gen.next()` 때문에 멈추던 문제를 `int(y_train[i][0])`, `next(gen)`으로 수정
+- `ch13/13-2.py`, `13-3.py`, `13-4.py`, `13-8.py`: 마지막 그림을 그린 뒤 `plt.show()`가 없어 결과 창이 뜨지 않던 문제 수정. `13-8.py`는 Stable Diffusion 모델이 없어 실행 확인 못 함
+- `ch13/13-5.py`: 사용자 정의 `train_step`만 있는 VAE에 `validation_data`를 넘겨 첫 에포크 뒤 검증 단계에서 손실 없음 오류로 멈추던 문제를 `validation_data` 제거로 수정. 수정 후 9 에포크까지 진행 확인, 50 에포크 끝 결과는 미확인
+- `ch12/12-1.py`, `12-2.py`: Keras 3의 `get_file`이 압축을 `modelnet_extracted` 폴더에 풀어 ModelNet10 경로를 찾지 못하던 문제를 돌려받은 경로가 폴더인지 확인하는 방식으로 수정. `12-1.py`로 확인, `12-2.py` 학습 결과는 미확인
 
 ---
 

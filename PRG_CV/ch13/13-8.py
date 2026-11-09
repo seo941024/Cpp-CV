@@ -8,3 +8,4 @@ for i in range(len(img)):
     plt.subplot(1,len(img),i+1)
     plt.imshow(img[i])
     plt.axis('off')
+plt.show()

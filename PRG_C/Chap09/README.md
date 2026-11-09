@@ -57,3 +57,23 @@
 | 교환 함수 호출 | `swap(x, y)` | `swap(&x, &y)` |
 | 객체 멤버 호출 | `.` | `->` |
 | 예제 | [Prg9-1.cpp](Prg9-1.cpp), [Prg9-2.cpp](Prg9-2.cpp), [Prg9-3.cpp](Prg9-3.cpp) | [Prg9-5.cpp](Prg9-5.cpp), [Prg9-6.cpp](Prg9-6.cpp), [Prg9-7.cpp](Prg9-7.cpp) |
+
+## 실행 결과
+
+MSYS2 g++ 15.2.0으로 컴파일해 실행한 화면. 노란색 줄은 키보드 입력값.
+
+| 참조 변수 `Prg9-1`, 참조 스왑 `Prg9-2`, 포인터 접근 `Prg9-5`, 포인터 스왑 `Prg9-6` | 크기·값·주소 `Prg9-4`, 포인터 산술 주소 `Prg9-8`. `Prg9-8`의 주소 앞 숫자는 구분자 없이 붙은 인덱스 `i` |
+|---|---|
+| ![참조와 포인터](../../docs/images/c_ch09_reference.png) | ![주소 출력](../../docs/images/c_ch09_address.png) |
+
+| 배열과 포인터 `Prg9-9`~`Prg9-12`, 정적 변수 `Prg9-13` | 힙 배열 `Prg9-14`, 래기드 배열 이항계수 `Prg9-15`. 크기 `5`와 정수 5개, `n` 값 `4`·`10` 입력 |
+|---|---|
+| ![배열과 포인터](../../docs/images/c_ch09_pointer_array.png) | ![힙 배열과 이항계수](../../docs/images/c_ch09_heap.png) |
+
+| `Chap07`의 `fraction.h`·`fraction.cpp`로 빌드한 분수 참조 비교 `Prg9-3`, 포인터 비교 `Prg9-7` | `Prg9-19.cpp`를 `matrix.h` 이름으로 복사해 `Prg9-20`·`Prg9-21`과 함께 빌드한 Matrix 덧셈·뺄셈·곱셈. 원소는 `rand()` 값 |
+|---|---|
+| ![분수 참조와 포인터 비교](../../docs/images/c_ch09_fraction_ref.png) | ![Matrix 연산](../../docs/images/c_ch09_matrix.png) |
+
+`Prg9-16.cpp`를 `course.h` 이름으로 복사해 `Prg9-17`·`Prg9-18`과 함께 빌드한 Course 성적 처리. `scores.dat`의 학생 10명 점수·등급·편차와 평균·표준 편차 출력.
+
+![Course 성적 처리](../../docs/images/c_ch09_course.png)

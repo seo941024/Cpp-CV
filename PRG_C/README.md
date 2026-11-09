@@ -50,6 +50,18 @@
 3. 남은 `+`·`-`를 왼쪽부터 적용.
 4. `long long` 결과가 `INT_MIN`~`INT_MAX` 밖이면 `오버/언더플로우 발생` 출력, 범위 안이면 `Bin`·`Dec`·`Hex` 출력.
 
+## 실행 결과
+
+MSYS2 g++ 15.2.0으로 컴파일해 실행한 화면. 노란색 줄은 키보드 입력값.
+
+| `hello`, `Prg2-1`, `Prg2-2`, `prg2-3` 실행 결과. `prg2-3`에 25와 17 입력 | `Homework.cpp` 성장 비전 리포트. 이름·나이·비전·목표 100·현재 65·활성화 1 입력 |
+|---|---|
+| ![프로그램 구조 예제](../docs/images/c_ch02_basics.png) | ![성장 비전 리포트](../docs/images/c_ch02_homework.png) |
+
+| `Calc.cpp` 곱셈·나눗셈 우선 계산. `3 + 4 * 5 - 6`, `8 / 2 * 3 - 1` 입력 | `Calc.cpp` 범위 초과와 음수 결과. `2000000000 + 2000000000 * 1 + 0`, `-5 * 7 - 100 / 3` 입력 |
+|---|---|
+| ![Calc 연산 순서](../docs/images/c_ch02_calc.png) | ![Calc 범위 초과](../docs/images/c_ch02_calc_overflow.png) |
+
 ## 빌드
 
 MSYS2 MinGW-w64 g++ 기준.

@@ -50,6 +50,24 @@ PyQt5 버튼 창에 OpenCV 처리를 연결한 응용 프로그램. 프레임 �
 
 ## 실행 결과
 
+PyQt5 5.15, `opencv-contrib-python` 4.13으로 실행한 화면. 버튼 클릭과 파일 선택은 실행 중인 창의 버튼과 대화 상자 반환값을 차례로 넣어 진행하고, Qt 창과 OpenCV 창을 `PrintWindow`로 찍은 사진. 소리 함수 `winsound.Beep`은 막고 실행.
+
+| 교통약자 표지판 인식 `6-4.py`. `traffic1.jpg`에서 노인 표지판 검출과 서행 안내 | 같은 예제의 `traffic5.jpg` 장애인 표지판 검출 |
+|---|---|
+| ![노인 보호구역 인식](../../docs/images/cv_ch06_sign_elder.jpg) | ![장애인 보호구역 인식](../../docs/images/cv_ch06_sign_disabled.jpg) |
+
+| `표지판 등록` 버튼 뒤 세 표지판 모델 창 | `traffic6.jpg`에서 좋은 매칭 4개 미만으로 `표지판이 없습니다.` 출력 |
+|---|---|
+| ![표지판 등록](../../docs/images/cv_ch06_sign_register.png) | ![표지판 없음](../../docs/images/cv_ch06_sign_none.jpg) |
+
+| GrabCut 오림 앱 `6-3.py`. `ch4/soccer.jpg`를 열어 붓 칠 후 `오림` | 특수 효과 `6-6.py`. `ch3/rose.png`에 엠보싱·카툰·연필 스케치·유화 적용 |
+|---|---|
+| ![GrabCut 오림 앱](../../docs/images/cv_ch06_grabcut_app.jpg) | ![특수 효과](../../docs/images/cv_ch06_effects.jpg) |
+
+| 삑 소리 창 `6-1.py`. 시작, `짧게 삑`, `길게 삑` 뒤 문구 | PyQt5 테트리스 `tetris in py.py`. 시작 화면과 블록 몇 개를 내린 화면 |
+|---|---|
+| ![삑 소리 창](../../docs/images/cv_ch06_beep.png) | ![테트리스](../../docs/images/cv_ch06_tetris.png) |
+
 `CPA_detection.py`의 검출 함수 `detect_signs`를 도로 영상 프레임에 적용한 결과.
 
 ![표지판 검출](../../docs/images/cv_ch06_cpa_detection.jpg)

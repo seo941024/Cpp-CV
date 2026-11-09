@@ -89,7 +89,7 @@ class VAE(keras.Model):
 
 vae = VAE(model_encoder, model_decoder)
 vae.compile(optimizer="adam")
-vae.fit(x_train, x_train, epochs=50, batch_size=128, validation_data=(x_test, x_test))
+vae.fit(x_train, x_train, epochs=50, batch_size=128)
 
 i = np.random.randint(x_test.shape[0])
 j = np.random.randint(x_test.shape[0])

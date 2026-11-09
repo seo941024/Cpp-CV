@@ -18,3 +18,11 @@
 |---|---|---|
 | [12-1.py](12-1.py) | ModelNet10 부류마다 첫 학습 메시에서 표면 점을 뽑아 3차원 산점도로 나란히 표시 | `trimesh.load`, `mesh.sample`, `projection="3d"` |
 | [12-2.py](12-2.py) | 메시를 점 구름으로 바꿔 PointNet 분류 모델 학습, 무작위 테스트 샘플의 예측과 정답을 3차원 산점도로 표시 | `tnet`, `Conv1D`, `GlobalMaxPooling1D` |
+
+## 실행 결과
+
+Python 3.11, TensorFlow 2.21 CPU, trimesh 5.2로 실행한 결과. ModelNet10은 프린스턴 대학 공식 배포 파일을 내려받아 사용, 그래프는 `plt.show` 시점의 figure를 그대로 저장한 사진.
+
+ModelNet10 점 구름 `12-1.py`. 부류마다 첫 학습 메시에서 표면 점 4096개를 뽑아 그린 3차원 산점도.
+
+![ModelNet10 점 구름](../../docs/images/cv_ch12_modelnet.png)

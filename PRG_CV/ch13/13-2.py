@@ -16,3 +16,4 @@ plt.figure(figsize=(10,4))				# 샘플 그리기
 for i in range(5):
     plt.subplot(1,5,i+1)
     plt.imshow(gen[i].reshape((28,28)),cmap='gray'); plt.xticks([]); plt.yticks([])
+plt.show()

@@ -61,6 +61,28 @@
 
 ## 실행 결과
 
+MSYS2 g++ 15.2.0으로 컴파일해 실행한 화면. 노란색 줄은 키보드 입력값. `^Z`는 `Ctrl+Z`로 넣은 입력 끝 표시.
+
+| 카운터 제어 `while` `Prg5-1`~`Prg5-4`. 점수 `90`·`75`·`82`·`68`, `5`, `10` 입력 | 센티넬 `Prg5-5`, EOF `Prg5-6`, 파일 합계 `Prg5-7`, 파일 탐색 `Prg5-8`. `-1`과 `^Z`로 입력 종료 |
+|---|---|
+| ![카운터 제어 while](../../docs/images/c_ch05_counter.png) | ![센티넬과 EOF](../../docs/images/c_ch05_sentinel.png) |
+
+| `for` 반복 `Prg5-9`, 7의 배수 표 `Prg5-10`. `12` 입력 | `do-while` 자리 추출 `Prg5-12`, 입력 검증 `Prg5-13`. `8735`, 범위 밖 `120`·`-5` 다음 `87` 입력 |
+|---|---|
+| ![for 반복](../../docs/images/c_ch05_for.png) | ![do-while](../../docs/images/c_ch05_dowhile.png) |
+
+| 중첩 반복 `Prg5-14`~`Prg5-16`. `3`·`8`, `4`·`5`, 범위 밖 `12` 다음 `9` 입력 | 소수 판정 `Prg5-17`, 합과 곱 `Prg5-18`, 팩토리얼 `Prg5-19`. `97`·`91`·`1`, 숫자 4개, `20` 입력 |
+|---|---|
+| ![중첩 반복](../../docs/images/c_ch05_nested.png) | ![소수·합과 곱·팩토리얼](../../docs/images/c_ch05_prime_fact.png) |
+
+| 거듭제곱과 오버플로우 검사 `Prg5-20`, 최소·최대 `Prg5-21`. `3`의 `10`제곱, `10`의 `12`제곱, 숫자 5개 입력 | 7의 배수 탐색 `Prg5-22`. `49`에서 반복 종료한 경우와 찾지 못한 경우 |
+|---|---|
+| ![거듭제곱과 최소·최대](../../docs/images/c_ch05_power_minmax.png) | ![7의 배수 탐색](../../docs/images/c_ch05_search7.png) |
+
+| 달력 입력 검증 `Prg5-11`. 날짜 수 `32` 다음 `28`, 요일 `7` 다음 `0` 입력 | `all.cpp`, `any.cpp`. 프롬프트 없이 개수 `3`과 정수 3개 입력 |
+|---|---|
+| ![달력 입력 검증](../../docs/images/c_ch05_calendar_check.png) | ![all과 any](../../docs/images/c_ch05_all_any.png) |
+
 `Prg5-11.cpp`에 날짜 수 `31`, 첫날 요일 `3`을 입력한 결과.
 
 ![Prg5-11 달력 출력](../../docs/images/c_ch05_calendar.png)

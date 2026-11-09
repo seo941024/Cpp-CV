@@ -56,3 +56,4 @@ for i in range(11):
     plt.subplot(1,11,i+1)
     plt.imshow(gen[i].reshape(28,28),cmap='gray'); plt.xticks([]); plt.yticks([])
     plt.title(str(alpha[i]))
+plt.show()

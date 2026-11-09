@@ -24,3 +24,4 @@ plt.figure(figsize=(20,4))		# 생성된 샘플 10개를 그리기
 for i in range(10):
     plt.subplot(1,10,i+1)
     plt.imshow(gen[0][i].reshape((28,28)),cmap='gray'); plt.xticks([]); plt.yticks([])
+plt.show()

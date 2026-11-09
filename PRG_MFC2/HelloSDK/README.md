@@ -31,3 +31,13 @@ MFC 없이 Win32 API만으로 창 클래스 등록, 창 생성, 메시지 루프
 | [HelloSDK.slnx](HelloSDK.slnx), [HelloSDK.vcxproj](HelloSDK.vcxproj), [HelloSDK.vcxproj.filters](HelloSDK.vcxproj.filters) | Visual Studio 프로젝트 생성 파일. 하위 시스템 Windows, 유니코드 문자 집합, 플랫폼 도구 집합 v145 | - |
 
 같은 동작을 MFC 클래스로 옮긴 프로젝트는 [HelloMFC](../HelloMFC/README.md).
+
+## 실행 결과
+
+MSYS2 g++ 15.2.0에 `-DUNICODE -D_UNICODE -mwindows` 옵션을 주어 빌드한 실행 화면. 왼쪽은 `(100, 100)` 위치에 `Hello, SDK`를 그린 창, 오른쪽은 창 안에 왼쪽 버튼 클릭 메시지를 보낸 뒤 뜬 `마우스 클릭!` 메시지 상자. 창은 Win32 `PrintWindow`로 찍은 사진.
+
+```bash
+g++ -DUNICODE -D_UNICODE -mwindows HelloSDK.cpp -o HelloSDK.exe
+```
+
+![HelloSDK 실행 화면](../../docs/images/mfc_hellosdk.png)

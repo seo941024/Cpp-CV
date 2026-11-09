@@ -58,6 +58,20 @@
 
 ## 실행 결과
 
+MSYS2 g++ 15.2.0으로 컴파일해 실행한 화면.
+
+| Circle 클래스 `Prg7-1`, 생성자·소멸자 호출 순서 `Prg7-2` | RandomInteger `Prg7-3`, Rectangle `Prg7-4`, 정적 멤버 객체 수 `Prg7-5` |
+|---|---|
+| ![Circle 클래스](../../docs/images/c_ch07_circle_class.png) | ![RandomInteger와 Rectangle](../../docs/images/c_ch07_random_rect.png) |
+
+| 계좌 생성·입금·출금·해지 `Prg7-6` | `mingw32-make`로 `circle.cpp`·`app.cpp` 분할 컴파일 후 실행 |
+|---|---|
+| ![계좌 클래스](../../docs/images/c_ch07_account.png) | ![makefile 분할 컴파일](../../docs/images/c_ch07_make_circle.png) |
+
+| `circle.cpp`와 `Prg7-9.cpp`를 함께 컴파일한 한글 출력판 | `Prg7-13.cpp`를 `time.h` 이름으로 복사해 `Prg7-14`·`Prg7-15`와 함께 빌드한 결과 |
+|---|---|
+| ![Prg7-9 한글 출력판](../../docs/images/c_ch07_prg7_9.png) | ![Time 분할 컴파일](../../docs/images/c_ch07_time.png) |
+
 `fraction.cpp`와 `app2.cpp`를 함께 컴파일한 결과. `14/21`은 `2/3`, `11/-8`은 `-11/8`로 정리.
 
 ![Fraction 분할 컴파일](../../docs/images/c_ch07_fraction.png)

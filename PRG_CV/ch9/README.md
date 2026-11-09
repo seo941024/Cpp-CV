@@ -35,3 +35,9 @@
 `soccer.jpg`, `busy_street.jpg`: 검출·분할 입력 사진. `coco_names.txt`: YOLO v3가 쓰는 COCO 부류 이름. `yolov3.cfg`: YOLO v3 신경망 구성 파일.
 
 실행에 필요한 `yolov3.weights`, `deeplabv3_xception65_ade20k.h5`, `mask_rcnn_coco.h5`, `xception_pascalvoc.pb` 모델 파일과 `datasets/oxford_pets` 데이터셋은 저장소에 없어 실행 전 별도 준비.
+
+## 실행 결과
+
+YOLO v3 검출 `9-1.py`. `soccer.jpg`에서 사람 1.000·0.941, 공 0.999 검출. `yolov3.weights`는 공식 배포 파일을 내려받아 사용, Python 3.11, OpenCV 4.13.0 `dnn` 모듈로 실행하고 창을 `PrintWindow`로 찍은 사진.
+
+![YOLO v3 검출](../../docs/images/cv_ch09_yolo.jpg)

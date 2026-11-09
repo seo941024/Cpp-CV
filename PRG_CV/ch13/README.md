@@ -27,3 +27,19 @@
 | [13-6.py](13-6.py) | Fashion-MNIST 8번 부류 영상으로 DCGAN 학습, 10 에포크마다 생성 영상 표시 | `make_discriminator`, `make_generator`, `train_on_batch` |
 | [13-7.py](13-7.py) | CIFAR-10 1번 자동차 부류로 컬러 영상 DCGAN 학습 | `Conv2DTranspose`, `Conv2D(3, (3, 3), activation="tanh")` |
 | [13-8.py](13-8.py) | Stable Diffusion으로 `A cute rabbit in an avocado armchair` 문장에서 512×512 영상 생성 | `keras_cv.models.StableDiffusion`, `text_to_image` |
+
+## 실행 결과
+
+Python 3.11, TensorFlow 2.21 CPU로 실행한 결과. 학습 로그는 터미널 출력의 연속된 끝부분, 그래프와 영상 목록은 `plt.show` 시점의 figure를 그대로 저장한 사진. MNIST·CIFAR-10은 Keras 데이터셋 캐시 사용.
+
+| 가우시안 샘플 5개 `13-1.py` | 숫자 0 영상 평균·공분산으로 생성한 영상 5장 `13-2.py` |
+|---|---|
+| ![가우시안 샘플](../../docs/images/cv_ch13_gauss_sample.png) | ![가우시안 생성 영상](../../docs/images/cv_ch13_gauss_mnist.png) |
+
+가우시안 혼합 `13-3.py`. 위 가우시안 8개의 평균 영상, 아래 생성 샘플 10개.
+
+![가우시안 혼합](../../docs/images/cv_ch13_gmm.png)
+
+컨볼루션 오토인코더 `13-4.py`. 50 에포크 학습 뒤 두 영상의 잠복 벡터 사이 0.0~1.0 보간으로 생성한 11장.
+
+![오토인코더 보간](../../docs/images/cv_ch13_ae_interp.png)

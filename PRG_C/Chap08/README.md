@@ -53,6 +53,20 @@
 
 ## 실행 결과
 
-`Prg8-14.cpp`가 `integerFile.dat`에서 0~9 정수만 세어 출력한 히스토그램.
+MSYS2 g++ 15.2.0으로 컴파일해 실행한 화면. 노란색 줄은 키보드 입력값.
 
-![Prg8-14 빈도 히스토그램](../../docs/images/c_ch08_histogram.png)
+| 역순 출력 `Prg8-1`, 월별 일수 `Prg8-3`. 크기 `12` 다음 `6`, 정수 6개, 월 `2`·`11` 입력 | 배열 매개변수 `Prg8-6`~`Prg8-8` |
+|---|---|
+| ![역순 출력과 월별 일수](../../docs/images/c_ch08_reverse_days.png) | ![배열 매개변수](../../docs/images/c_ch08_array_param.png) |
+
+| `Chap07`의 `circle.h`·`circle.cpp`로 빌드한 Circle 객체 배열 `Prg8-4` | `Prg8-10.cpp`를 `student.h` 이름으로 복사해 `Prg8-11`·`Prg8-12`와 함께 빌드한 Student 객체 배열 |
+|---|---|
+| ![Circle 객체 배열](../../docs/images/c_ch08_circle_array.png) | ![Student 객체 배열](../../docs/images/c_ch08_student.png) |
+
+| 2차원 배열 선형 변환 `Prg8-15` | `Prg8-14.cpp`가 `integerFile.dat`에서 0~9 정수만 세어 출력한 히스토그램 |
+|---|---|
+| ![선형 변환](../../docs/images/c_ch08_transform.png) | ![Prg8-14 빈도 히스토그램](../../docs/images/c_ch08_histogram.png) |
+
+| 파일 역순 저장 `Prg8-2`, 파일 통계 `Prg8-5`. `inFile.dat`를 읽어 뒤집은 `outFile.dat` 내용 확인 | 병렬 배열 학점 `Prg8-9`, 학생 평균과 시험 평균 `Prg8-13` |
+|---|---|
+| ![파일 입출력](../../docs/images/c_ch08_file_io.png) | ![병렬 배열과 2차원 배열 평균](../../docs/images/c_ch08_parallel.png) |

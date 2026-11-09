@@ -32,3 +32,15 @@
 `rabbit.jpg`: 8-6 입력 사진. `dog_species_names.txt`: 8-7이 `pickle`로 저장한 견종 이름 목록, 확장자는 `.txt`지만 pickle 바이너리 파일.
 
 `8-4.py`는 `8-3.py`의 `cnn_v2.h5`, `8-8.py`는 `8-7.py`의 `cnn_for_stanford_dogs.h5`를 불러 사용. 모델 파일과 `datasets/stanford_dogs` 데이터셋은 저장소에 없어 실행 전 별도 준비.
+
+## 실행 결과
+
+Python 3.11, TensorFlow 2.21 CPU로 실행한 결과. 학습 로그는 터미널 출력의 연속된 끝부분, 그래프와 영상 목록은 `plt.show` 시점의 figure를 그대로 저장한 사진. MNIST·CIFAR-10은 Keras 데이터셋 캐시 사용. `8-6.py`의 ResNet50 ImageNet 가중치는 Keras 공식 저장소에서 내려받아 사용.
+
+| LeNet-5 `8-1.py`. 30 에포크, 정확률 98.91 | 데이터 증대 `8-5.py`. 맨 위 원본 15장, 아래 미니 배치 4장씩 세 번 생성 |
+|---|---|
+| ![LeNet-5](../../docs/images/cv_ch08_lenet.png) | ![데이터 증대](../../docs/images/cv_ch08_augment.png) |
+
+| ResNet50 분류 `8-6.py`. `rabbit.jpg`에 상위 5개 부류와 확률 표시 | `8-6.py` 출력. wood_rabbit 0.743, hare 0.240 순서 |
+|---|---|
+| ![ResNet50 분류](../../docs/images/cv_ch08_resnet.jpg) | ![ResNet50 상위 5개](../../docs/images/cv_ch08_resnet_top5.png) |

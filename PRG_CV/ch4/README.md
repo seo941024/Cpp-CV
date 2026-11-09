@@ -44,6 +44,28 @@
 
 ## 실행 결과
 
+Python 3.11, OpenCV 4.13.0으로 실행한 화면. OpenCV 창은 Win32 `PrintWindow`로 창 그대로 찍은 사진. `4-5`·`4-6`·`4-8`은 scikit-image가 있는 Python 3.14에서 실행. `4-7`은 붓 칠 콜백에 끌기 이벤트를 넣어 실행한 결과.
+
+| 소벨 에지 `4-1.py`. 원본, x 방향, y 방향, 에지 강도 | 점 100개 넘는 윤곽선 `4-3.py`. 왼쪽 원본 위 윤곽선, 오른쪽 캐니 에지 |
+|---|---|
+| ![소벨 에지](../../docs/images/cv_ch04_sobel.jpg) | ![윤곽선](../../docs/images/cv_ch04_contours.jpg) |
+
+| 사과 검출 `4-4.py`의 빨강 마스크 창과 검출 창 | SLIC 슈퍼픽셀 `4-5.py`. 원본, `compactness` 20, 40 |
+|---|---|
+| ![사과 마스크와 검출](../../docs/images/cv_ch04_apple_mask.jpg) | ![SLIC 슈퍼픽셀](../../docs/images/cv_ch04_slic.jpg) |
+
+| 정규화 절단 분할 `4-6.py` | `4-6.py` 영상 크기와 분할 소요 시간 출력 |
+|---|---|
+| ![정규화 절단](../../docs/images/cv_ch04_ncut.jpg) | ![정규화 절단 소요 시간](../../docs/images/cv_ch04_ncut_time.png) |
+
+| GrabCut `4-7.py`. 파란 붓은 물체, 빨간 붓은 배경, 오른쪽은 `q` 키 뒤 오림 결과 | 말 실루엣 `4-8.py`. 원본, 윤곽선, 직선 근사와 볼록 헐 |
+|---|---|
+| ![GrabCut](../../docs/images/cv_ch04_grabcut.jpg) | ![형상 특징](../../docs/images/cv_ch04_shape.png) |
+
+`4-8.py`가 출력한 면적·중점·둘레·둥근 정도.
+
+![형상 특징 값](../../docs/images/cv_ch04_shape_values.png)
+
 캐니 임곗값 비교 `4-2.py`. 왼쪽 50·150, 오른쪽 100·200.
 
 ![캐니 임곗값 비교](../../docs/images/cv_ch04_canny.jpg)

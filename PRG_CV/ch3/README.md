@@ -37,6 +37,24 @@
 
 ## 실행 결과
 
+Python 3.11, OpenCV 4.13.0으로 실행한 화면. OpenCV 창은 Win32 `PrintWindow`로 창 그대로 찍은 사진. matplotlib 그래프는 `plt.show` 시점의 figure를 그대로 저장한 사진.
+
+| 채널 분리 `3-1.py`. 위 원본·왼쪽 위 영역·가운데 영역, 아래 R·G·B 채널 | R 채널 히스토그램 `3-2.py` |
+|---|---|
+| ![채널 분리](../../docs/images/cv_ch03_channels.jpg) | ![R 채널 히스토그램](../../docs/images/cv_ch03_histogram.png) |
+
+| 서명 영상 모폴로지 `3-4.py`. 위 이진화 영상, 아래 왼쪽 아래 영역과 팽창·침식·닫기 | 감마 0.5·0.75·1.0·2.0·3.0 비교 `3-5.py` |
+|---|---|
+| ![서명 모폴로지](../../docs/images/cv_ch03_morphology.png) | ![감마 보정](../../docs/images/cv_ch03_gamma.jpg) |
+
+| 히스토그램 평활화 `3-6.py`. 위 평활화 전, 아래 평활화 후 | 가우시안 블러 5·9·15 커널과 엠보싱 세 가지 `3-7.py` |
+|---|---|
+| ![히스토그램 평활화](../../docs/images/cv_ch03_equalize.jpg) | ![블러와 엠보싱](../../docs/images/cv_ch03_smooth_emboss.jpg) |
+
+| 보간법 비교 `3-8.py`. 파란 사각형 영역을 최근접·양선형·3차 보간으로 5배 확대 | 절반 축소, 팽창 `Morphology1`, 침식 `Morphology2`, 30도 회전 `3-8-1.py` |
+|---|---|
+| ![보간법 비교](../../docs/images/cv_ch03_interpolation.jpg) | ![축소·모폴로지·회전](../../docs/images/cv_ch03_morph_rotate.jpg) |
+
 오츄 이진화 `3-3.py`. 왼쪽 R 채널, 오른쪽 이진화 영상.
 
 ![오츄 이진화](../../docs/images/cv_ch03_otsu.jpg)

@@ -86,7 +86,7 @@ void Course::setDeviations()
     students[i].deviation = students[i].score - averageScore;
     standardDeviation += pow(students[i].deviation , 2); 
   }
-  standardDeviation = sqrt(standardDeviation) / numOfStds;
+  standardDeviation = sqrt(standardDeviation / numOfStds);
 }
 /**************************************************************
  * printResult 함수에서는                                     *

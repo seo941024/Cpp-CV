@@ -36,3 +36,9 @@
 `BSDS_242078.jpg`, `BSDS_361010.jpg`, `BSDS_376001.jpg`: 사진 자료, 이 장에서는 `BSDS_376001.jpg`를 10-4 입력으로 사용. `dice.png`: 알파 채널이 있는 주사위 그림. `coco_names.txt`, `yolov3.cfg`: YOLO v3 부류 이름과 신경망 구성 파일.
 
 실행에 필요한 `yolov3.weights`와 `slow_traffic_small.mp4`는 저장소에 없어 실행 전 별도 준비.
+
+## 실행 결과
+
+MediaPipe 얼굴 검출 `10-4.py`. `BSDS_376001.jpg`에서 얼굴 3개의 박스와 핵심점 표시. Python 3.11, MediaPipe 0.10.14로 실행하고 창을 `PrintWindow`로 찍은 사진.
+
+![MediaPipe 얼굴 검출](../../docs/images/cv_ch10_face.png)

@@ -24,7 +24,7 @@ int main()
   {
     do 
     {
-       cout << "1~15 사이의 정수를 입력하세요: ";
+       cout << "5~15 사이의 정수를 입력하세요: ";
        cin >> guess;
     } while(guess < 5 || guess > 15);
     

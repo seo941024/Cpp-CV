@@ -11,7 +11,7 @@ classes=['bathtub','bed','chair','desk','dresser','monitor','night_stand','sofa'
 
 path="http://3dvision.princeton.edu/projects/2014/3DShapeNets/ModelNet10.zip"
 data_dir=tf.keras.utils.get_file('modelnet.zip',path,extract=True)
-data_dir=os.path.join(os.path.dirname(data_dir),'ModelNet10')
+data_dir=os.path.join(data_dir if os.path.isdir(data_dir) else os.path.dirname(data_dir),'ModelNet10')
 
 def parse_dataset(num_points=2048):
     train_points,train_labels=[],[]
