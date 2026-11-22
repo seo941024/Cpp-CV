@@ -66,30 +66,30 @@ C++ 프로그래밍과 OpenCV 컴퓨터 비전 학습 저장소. 작성자 서�
 |---|---|---|---|
 | 시작 예제 | `hello.py`, `CV.py`, `img2.py`, `cam.py` | NumPy 배열, 영상 표시, 축소·명암 변환, 웹캠 | `np.array.sort`, `cv.imread`, `cv.resize`, `cv.VideoCapture` |
 | 과제 2 | `Homework2.py`, `Homework2_2.py` | 산토리니 사진 축소·명암·날짜 표기 | `cv.cvtColor`, 0.5배 축소, `cv.rectangle`, `cv.putText` |
-| 2장 | `ch2/2-1~9` | OpenCV 입출력과 마우스 | 영상 저장, 프레임 수집 후 `np.hstack` 연결, 도형·글씨 그리기, 마우스 콜백 사각형·붓 칠 |
-| [3장](PRG_C/Chap03) | `ch3/3-1~9`, `3-8-1` | 화소 처리 | 채널 분리, 히스토그램, 오츄 이진화, 팽창·침식·닫기, 감마 보정, 히스토그램 평활화, 가우시안 스무딩, 엠보싱, 보간법 비교, 회전 변환, 반복문과 벡터 연산 속도 비교 |
-| [4장](PRG_C/Chap04) | `ch4/4-1~3` | 에지와 윤곽선 | 소벨 에지 강도, 캐니 임곗값 비교, `findContours` 길이 필터 |
-| [4장](PRG_C/Chap04) | `ch4/4-4.py` | 사과 검출·개수 세기 | HSV 빨강 두 구간 마스크, 모폴로지 열기·닫기, 면적·원형도 필터, `minEnclosingCircle` |
-| [4장](PRG_C/Chap04) | `ch4/4-5~8`, `4-6.py` | 영역 분할과 형상 | SLIC 슈퍼픽셀, 정규화 절단, GrabCut, 모멘트·면적·둘레·둥근 정도, 직선 근사, 볼록 헐 |
-| [5장](PRG_C/Chap05) | `ch5/5-1~4` | 지역 특징 | 해리스 특징 가능성 맵과 비최대 억제, SIFT 키포인트, FLANN 최근접 2개 비율 검사, RANSAC 호모그래피 |
-| [5장](PRG_C/Chap05) | `ch5/import cv2.py` | 사과 사진 에지·윤곽선 저장 | 소벨 X·Y, 캐니, 외곽 윤곽선, 결과 파일 저장 |
-| [6장](PRG_C/Chap06) | `ch6/ch6/6-1~7` | PyQt5 비전 응용 | 버튼 콜백, 프레임 수집·저장, GrabCut 오림, SIFT 교통약자 표지판 인식, 파노라마 봉합, 엠보싱·카툰·연필 스케치·유화 효과 |
+| [2장](PRG_CV/ch2) | `ch2/2-1~9` | OpenCV 입출력과 마우스 | 영상 저장, 프레임 수집 후 `np.hstack` 연결, 도형·글씨 그리기, 마우스 콜백 사각형·붓 칠 |
+| [3장](PRG_CV/ch3) | `ch3/3-1~9`, `3-8-1` | 화소 처리 | 채널 분리, 히스토그램, 오츄 이진화, 팽창·침식·닫기, 감마 보정, 히스토그램 평활화, 가우시안 스무딩, 엠보싱, 보간법 비교, 회전 변환, 반복문과 벡터 연산 속도 비교 |
+| [4장](PRG_CV/ch4) | `ch4/4-1~3` | 에지와 윤곽선 | 소벨 에지 강도, 캐니 임곗값 비교, `findContours` 길이 필터 |
+| [4장](PRG_CV/ch4) | `ch4/4-4.py` | 사과 검출·개수 세기 | HSV 빨강 두 구간 마스크, 모폴로지 열기·닫기, 면적·원형도 필터, `minEnclosingCircle` |
+| [4장](PRG_CV/ch4) | `ch4/4-5~8`, `4-6.py` | 영역 분할과 형상 | SLIC 슈퍼픽셀, 정규화 절단, GrabCut, 모멘트·면적·둘레·둥근 정도, 직선 근사, 볼록 헐 |
+| [5장](PRG_CV/ch5) | `ch5/5-1~4` | 지역 특징 | 해리스 특징 가능성 맵과 비최대 억제, SIFT 키포인트, FLANN 최근접 2개 비율 검사, RANSAC 호모그래피 |
+| [5장](PRG_CV/ch5) | `ch5/import cv2.py` | 사과 사진 에지·윤곽선 저장 | 소벨 X·Y, 캐니, 외곽 윤곽선, 결과 파일 저장 |
+| [6장](PRG_CV/ch6) | `ch6/ch6/6-1~7` | PyQt5 비전 응용 | 버튼 콜백, 프레임 수집·저장, GrabCut 오림, SIFT 교통약자 표지판 인식, 파노라마 봉합, 엠보싱·카툰·연필 스케치·유화 효과 |
 | 6장 과제 | `ch6/ch6/CPA_detection.py` | 도로 영상 어린이보호구역 속도 30 표지판 검출 | SIFT, BFMatcher 비율 검사, RANSAC 인라이어 비율, 검출 사각형 유효성 검사, `QTimer` 프레임 재생 |
-| [6장](PRG_C/Chap06) | `ch6/ch6/123123123.py`, `test.py` | 표지판 검출 시험본 | `test.py`는 `CPA_detection.py`와 같은 내용 |
-| [6장](PRG_C/Chap06) | `ch6/ch6/tetris in py.py` | PyQt5 테트리스 | `QPainter` 블록 그리기, `QTimer` 낙하, 행렬 회전 |
+| [6장](PRG_CV/ch6) | `ch6/ch6/123123123.py`, `test.py` | 표지판 검출 시험본 | `test.py`는 `CPA_detection.py`와 같은 내용 |
+| [6장](PRG_CV/ch6) | `ch6/ch6/tetris in py.py` | PyQt5 테트리스 | `QPainter` 블록 그리기, `QTimer` 낙하, 행렬 회전 |
 
 ### 7~13장 딥러닝 비전
 
 | 장 | 파일 | 주제 | 핵심 개념 |
 |---|---|---|---|
-| [7장](PRG_C/Chap07) | `ch7/7-1~7` | 다층 퍼셉트론 | MNIST·CIFAR-10 확인, SGD·Adam 비교, 깊은 MLP, 배치 정규화·드롭아웃, 학습 모델 저장 후 필기 숫자 인식 |
-| [8장](PRG_C/Chap08) | `ch8/8-1~8` | 컨볼루션 신경망 | LeNet-5, CIFAR-10 CNN, 데이터 증대, ResNet50 사전 학습 분류, DenseNet121 전이 학습 견종 분류, PyQt5 견종 인식 앱 |
-| [9장](PRG_C/Chap09) | `ch9/ch9/9-1~9` | 검출과 분할 | YOLO v3 정지 영상·비디오 검출과 FPS 측정, U-net Oxford Pets 분할, DeepLabv3·Mask R-CNN 분할, 배경 흐림·색 변경 |
-| 10장 | `ch10/10-1~9` | 추적과 사람 인식 | Farneback·Lucas-Kanade 광류, YOLO v3와 SORT 사람 추적, MediaPipe 얼굴 검출·증강 현실·얼굴 그물망·손·자세 |
-| 10장 | `ch10/test.py` | 손가락 그림판 | MediaPipe 손 랜드마크, 검지만 펴면 그리기, 검지·중지를 펴면 색 선택·지우기, 캔버스 마스크 합성 |
-| 11장 | `ch11/11-1~5` | 트랜스포머 | CIFAR-10 ViT 구현, Hugging Face ViT 분류, DETR 검출, CLIP 영상-문장 유사도 |
-| 12장 | `ch12/12-1~2` | 3차원 비전 | ModelNet10 점 구름 시각화, PointNet 분류 |
-| 13장 | `ch13/13-1~8` | 생성 모델 | 가우시안 샘플 생성, 가우시안 혼합, 오토인코더, VAE, Fashion-MNIST·CIFAR-10 DCGAN, Stable Diffusion |
+| [7장](PRG_CV/ch7) | `ch7/7-1~7` | 다층 퍼셉트론 | MNIST·CIFAR-10 확인, SGD·Adam 비교, 깊은 MLP, 배치 정규화·드롭아웃, 학습 모델 저장 후 필기 숫자 인식 |
+| [8장](PRG_CV/ch8) | `ch8/8-1~8` | 컨볼루션 신경망 | LeNet-5, CIFAR-10 CNN, 데이터 증대, ResNet50 사전 학습 분류, DenseNet121 전이 학습 견종 분류, PyQt5 견종 인식 앱 |
+| [9장](PRG_CV/ch9) | `ch9/ch9/9-1~9` | 검출과 분할 | YOLO v3 정지 영상·비디오 검출과 FPS 측정, U-net Oxford Pets 분할, DeepLabv3·Mask R-CNN 분할, 배경 흐림·색 변경 |
+| [10장](PRG_CV/ch10) | `ch10/10-1~9` | 추적과 사람 인식 | Farneback·Lucas-Kanade 광류, YOLO v3와 SORT 사람 추적, MediaPipe 얼굴 검출·증강 현실·얼굴 그물망·손·자세 |
+| [10장](PRG_CV/ch10) | `ch10/test.py` | 손가락 그림판 | MediaPipe 손 랜드마크, 검지만 펴면 그리기, 검지·중지를 펴면 색 선택·지우기, 캔버스 마스크 합성 |
+| [11장](PRG_CV/ch11) | `ch11/11-1~5` | 트랜스포머 | CIFAR-10 ViT 구현, Hugging Face ViT 분류, DETR 검출, CLIP 영상-문장 유사도 |
+| [12장](PRG_CV/ch12) | `ch12/12-1~2` | 3차원 비전 | ModelNet10 점 구름 시각화, PointNet 분류 |
+| [13장](PRG_CV/ch13) | `ch13/13-1~8` | 생성 모델 | 가우시안 샘플 생성, 가우시안 혼합, 오토인코더, VAE, Fashion-MNIST·CIFAR-10 DCGAN, Stable Diffusion |
 
 ### PRG_CV 구현 방식
 
@@ -226,7 +226,6 @@ python 4-4.py
 ```
 
 - 영상 파일을 상대 경로로 읽으므로 스크립트가 있는 폴더에서 실행.
-- `ch3/3-9.py`는 폴더에 없는 `girl_laughing.png`를 읽으므로 그대로는 실행되지 않음.
 - `6-6`, `6-7`의 유화 효과 `cv.xphoto`는 `opencv-contrib-python` 필요.
 - 학습된 모델 `.h5`·`.weights`·`.pb`·`.onnx`, 데이터셋, 도로 영상 `.mp4`는 용량 문제로 저장소에서 제외. 실행 시 별도 준비 필요
 - 7장 이후는 TensorFlow, MediaPipe, PixelLib, Transformers, PyTorch, trimesh, filterpy, keras_cv, scikit-learn 사용. 9·10장은 `yolov3.weights`, `yolov3.cfg`, 9장 분할 예제는 `.h5`, `.pb` 모델 파일 필요.
