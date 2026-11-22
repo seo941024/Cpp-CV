@@ -72,4 +72,4 @@ python 4-4.py
 - 영상 파일을 상대 경로로 읽으므로 스크립트가 있는 폴더에서 실행.
 - ch6 유화 효과 `cv.xphoto`는 `opencv-contrib-python` 필요.
 - ch7 이후는 TensorFlow, PixelLib, MediaPipe, filterpy, Transformers, PyTorch, trimesh, scikit-learn, keras_cv 사용.
-- 학습된 모델 파일, 데이터셋, 동영상은 저장소에 없어 실행 전 별도 준비. 장별 필요 파일은 각 장 README에 표기.
+- 학습된 모델 파일, 데이터셋, 동영상은 저장소에 없어 실행 전 준비. 장별 필요 파일은 각 장 README에 표기.

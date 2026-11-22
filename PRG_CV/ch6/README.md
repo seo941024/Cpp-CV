@@ -72,4 +72,4 @@ PyQt5 5.15, `opencv-contrib-python` 4.13으로 실행한 화면. 버튼 클릭�
 
 ![표지판 검출](../../docs/images/cv_ch06_cpa_detection.jpg)
 
-도로 동영상은 저장소에 없어 실행 전 별도 준비. `123123123.py`는 스크립트 폴더의 `20260429_road.mp4`를 열고, `CPA_detection.py`는 파일 대화 상자로 동영상 선택.
+도로 동영상은 저장소에 없어 실행 전 준비. `123123123.py`는 스크립트 폴더의 `20260429_road.mp4`를 열고, `CPA_detection.py`는 파일 대화 상자로 동영상 선택.

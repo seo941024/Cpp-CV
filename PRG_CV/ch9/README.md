@@ -34,7 +34,7 @@
 
 `soccer.jpg`, `busy_street.jpg`: 검출·분할 입력 사진. `coco_names.txt`: YOLO v3가 쓰는 COCO 부류 이름. `yolov3.cfg`: YOLO v3 신경망 구성 파일.
 
-실행에 필요한 `yolov3.weights`, `deeplabv3_xception65_ade20k.h5`, `mask_rcnn_coco.h5`, `xception_pascalvoc.pb` 모델 파일과 `datasets/oxford_pets` 데이터셋은 저장소에 없어 실행 전 별도 준비.
+실행에 필요한 `yolov3.weights`, `deeplabv3_xception65_ade20k.h5`, `mask_rcnn_coco.h5`, `xception_pascalvoc.pb` 모델 파일과 `datasets/oxford_pets` 데이터셋은 저장소에 없어 실행 전 준비.
 
 ## 실행 결과
 

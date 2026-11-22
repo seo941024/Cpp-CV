@@ -31,7 +31,7 @@
 
 `rabbit.jpg`: 8-6 입력 사진. `dog_species_names.txt`: 8-7이 `pickle`로 저장한 견종 이름 목록, 확장자는 `.txt`지만 pickle 바이너리 파일.
 
-`8-4.py`는 `8-3.py`의 `cnn_v2.h5`, `8-8.py`는 `8-7.py`의 `cnn_for_stanford_dogs.h5`를 불러 사용. 모델 파일과 `datasets/stanford_dogs` 데이터셋은 저장소에 없어 실행 전 별도 준비.
+`8-4.py`는 `8-3.py`의 `cnn_v2.h5`, `8-8.py`는 `8-7.py`의 `cnn_for_stanford_dogs.h5`를 불러 사용. 모델 파일과 `datasets/stanford_dogs` 데이터셋은 저장소에 없어 실행 전 준비.
 
 ## 실행 결과
 

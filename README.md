@@ -227,7 +227,7 @@ python 4-4.py
 
 - 영상 파일을 상대 경로로 읽으므로 스크립트가 있는 폴더에서 실행.
 - `6-6`, `6-7`의 유화 효과 `cv.xphoto`는 `opencv-contrib-python` 필요.
-- 학습된 모델 `.h5`·`.weights`·`.pb`·`.onnx`, 데이터셋, 도로 영상 `.mp4`는 용량 문제로 저장소에서 제외. 실행 시 별도 준비 필요
+- 학습된 모델 `.h5`·`.weights`·`.pb`·`.onnx`, 데이터셋, 도로 영상 `.mp4`는 용량 문제로 저장소에서 제외. 실행 시 준비 필요
 - 7장 이후는 TensorFlow, MediaPipe, PixelLib, Transformers, PyTorch, trimesh, filterpy, keras_cv, scikit-learn 사용. 9·10장은 `yolov3.weights`, `yolov3.cfg`, 9장 분할 예제는 `.h5`, `.pb` 모델 파일 필요.
 
 ### PRG_MFC2
